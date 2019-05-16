@@ -1,11 +1,14 @@
 # Data Science Immersive Capstone Project: Airbnb Host Reviews Analysis
 
-
-### Contributors: 
-* Evelyn Li
-
+How can a host on Airbnb understand that are their strengths and weaknesses? How can hosts point out the demand trend of their customers from a large scale of comments? This project focuses on using machine learning tools to help hosts understand the underlying trends of the comments on their property.
 
 ---
+
+### Contributors: 
+- Evelyn Li
+
+---
+
 ## Table of Contents 
 
 This Notebook is broken down into different sections for analysis purpose. The following links are connected to differenct section within the Notebook for simple navigation. 
@@ -13,15 +16,15 @@ This Notebook is broken down into different sections for analysis purpose. The f
 ---
 
 ## Notebooks:
-- [0. Custom_stop_words](https://git.generalassemb.ly/billyu/Project-4-Disaster-Classification/blob/master/code/0.%20Custom_stop_words.ipynb)
-- [1. NewAPI_exploration_Finalized](https://git.generalassemb.ly/billyu/Project-4-Disaster-Classification/blob/master/code/1.%20NewAPI_exploration_Finalized%20.ipynb)
-- [2.a EDA Cleaning and Baseline Model](https://git.generalassemb.ly/billyu/Project-4-Disaster-Classification/blob/master/code/2.a%20EDA%20Cleaning%20and%20Baseline%20Model.ipynb)
-- [2.b EDA Cleaning and Baseline Model](https://git.generalassemb.ly/billyu/Project-4-Disaster-Classification/blob/master/code/2.b%20EDA%20%26%20Visualization%20.ipynb)
-- [2.c Doc2vevc_Model_Tryout](https://git.generalassemb.ly/billyu/Project-4-Disaster-Classification/blob/master/code/2.c%20Doc2vevc_Model_Tryout.ipynb)
-- [2.d LDA Tryout](https://git.generalassemb.ly/billyu/Project-4-Disaster-Classification/blob/master/code/2.d%20LDA%20Tryout.ipynb)
-- [3a. CountVectorizer + TFIDF for EDA modeling](https://git.generalassemb.ly/billyu/Project-4-Disaster-Classification/blob/master/code/3a.%20CountVectorizer%20%2B%20TFIDF%20for%20EDA%20modeling%20.ipynb)
-- [3b. TFIDF Final Model and Tunings](https://git.generalassemb.ly/billyu/Project-4-Disaster-Classification/blob/master/code/3b.%20TFIDF%20Final%20Model%20and%20Tunings.ipynb)
-- [4. Model_Testing](https://git.generalassemb.ly/billyu/Project-4-Disaster-Classification/blob/master/code/4.%20Model_Testing%20.ipynb)
+- [0. web_scraping_data_collection](https://git.generalassemb.ly/evolevelynli/capstone_project/blob/master/code/0.%20web_scraping_data_collection.ipynb)
+- [1. Cleaning and EDA](https://git.generalassemb.ly/evolevelynli/capstone_project/blob/master/code/1.%20Cleaning%20and%20EDA%20.ipynb)
+- [2. EDA on Location](https://git.generalassemb.ly/evolevelynli/capstone_project/blob/master/code/2.%20EDA%20on%20Location.ipynb)
+- [3.1. LDA Analysis On Sentiment](https://git.generalassemb.ly/evolevelynli/capstone_project/blob/master/code/3.1.%20LDA%20Analysis%20On%20Sentiment%20.ipynb)
+- [3.2 LDA Analysis on Review Score](https://git.generalassemb.ly/evolevelynli/capstone_project/blob/master/code/3.2%20LDA%20Analysis%20on%20Review%20Score.ipynb)
+- [4. Hidden Topics Analysis](https://git.generalassemb.ly/billyu/Project-4-Disaster-Classification/blob/master/code/2.d%20LDA%20Tryout.ipynb)
+- [3a. CountVectorizer + TFIDF for EDA modeling](https://git.generalassemb.ly/evolevelynli/capstone_project/blob/master/code/4.%20Hidden%20Topics%20Analysis%20.ipynb)
+- [5. Rating Prediction Model](https://git.generalassemb.ly/evolevelynli/capstone_project/blob/master/code/5.%20Rating%20Prediction%20Model.ipynb)
+- [6. Rating Prediction Model Tuning](https://git.generalassemb.ly/evolevelynli/capstone_project/blob/master/code/6.%20Rating%20Prediction%20Model%20Tuning%20.ipynb)
 
 ---
 
@@ -52,22 +55,21 @@ As an active Airbnb user, I appreciate the star rating of each listing which has
 ## Model Summary 
 ---
 
-regression estimators: 
+Regression Estimators: 
 
 4 different models deployed, 3 vectorization methods, 1 sets of features (Comments) 
  
 Hyperparameter Tuning:
 
-1. Stop words and customized stop words (remove locations names, like countries, regions, states, cities)
-2. Tokenize and Lemmatize
-3. Features (content only, and content + description)
-4. Grid Search
+1. Stop words 
+2. Count Vectorizer, TFIDF, Keras Tokenizer 
+3. Features (content only)
+4. Learning Rate Tunning 
  
-Final model selection: 
+Final model: 
 
-1. TFIDF + custom location stop words + Logistic Regression
-2. Pull out key parameters (top feature words & coefficients)
-3. Compare the coefficients and feature name before and after the customized stop words
+1. TFIDF + Adaboost Regression 
+2. Neural Network 
 
 
 ---
