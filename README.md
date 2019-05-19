@@ -23,7 +23,7 @@ This Notebook is broken down into different sections for analysis purpose. The f
 - [3.2 LDA Analysis on Review Score](https://git.generalassemb.ly/evolevelynli/capstone_project/blob/master/code/3.2%20LDA%20Analysis%20on%20Review%20Score.ipynb)
 - [4. Hidden Topics Analysis](https://git.generalassemb.ly/evolevelynli/capstone_project/blob/master/code/4.%20Hidden%20Topics%20Analysis%20.ipynb)
 - [5. Rating Prediction Model](https://git.generalassemb.ly/evolevelynli/capstone_project/blob/master/code/5.%20Rating%20Prediction%20Model.ipynb)
-- [6. Sentiment Prediction Model](https://git.generalassemb.ly/evolevelynli/capstone_project/blob/master/code/6.%20Rating%20Prediction%20Model%20Tuning%20.ipynb)
+- [6. Sentiment Prediction Model](https://git.generalassemb.ly/evolevelynli/capstone_project/blob/master/code/6.%20Sentiment%20Prediction%20Model%20.ipynb)
 
 ---
 
